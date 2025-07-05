@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindWell Clinic - Layanan Psikologi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MindWell Clinic</h1>
+      <nav>
+        <ul>
+          <li><a href="#jadwal">Jadwal Konsultasi</a></li>
+          <li><a href="#buat-janji">Buat Janji</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="jadwal">
+      <h2>Jadwal Konsultasi</h2>
+      <div id="jadwal-konsultasi">
+        <!-- Isi jadwal konsultasi akan di-generate oleh JavaScript -->
+      </div>
+    </section>
+
+    <section id="buat-janji">
+      <h2>Buat Janji Konsultasi</h2>
+      <form id="form-janji" action="proses_janji.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required /><br /><br />
+        <label for="tanggal">Tanggal Konsultasi:</label>
+        <input type="date" id="tanggal" name="tanggal" required /><br /><br />
+        <input type="submit" value="Buat Janji" />
+      </form>
+    </section>
+
+    <footer>&copy; 2024 MindWell Clinic. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html
